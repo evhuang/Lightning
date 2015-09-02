@@ -26,5 +26,6 @@ void mousePressed()
 	startY = 0;
 	endX = startX;
 	endY = 0;
+	background(0);
 }
 
