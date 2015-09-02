@@ -31,7 +31,7 @@ ellipse(350,490,400,300);
 textSize(32);
 textAlign(LEFT);
 fill(255);
-String s = "The sun is the enemy.";
+String s = "The sun is your enemy.";
 text(s, 10, 450);
 
 }
