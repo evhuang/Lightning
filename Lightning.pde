@@ -1,18 +1,21 @@
-int startX = (int)(Math.random()*300);
-int startY = 0;
+int startX = 250;
+int startY = 100;
 int endX = startX;
 int endY = 0;
 void setup()
 {
   background(0);
   size(500,500);
-  strokeWeight(1);
+  strokeWeight(5);
 }
 void draw()
 {
-	fill(0,0,0,10);
+	fill(255,255,0);
+	noStroke();
+	ellipse(250,100,150,150);
+	fill(102, 204, 255,80);
 	rect(-10,-10,600,600);
-	stroke((int)(Math.random() * 255), (int)(Math.random() * 255), (int)(Math.random() * 255));
+	stroke(255);
 	while(endY < 500)
 	{ 
 	endX = startX + (int)(Math.random() * 18) - 9;
@@ -21,14 +24,23 @@ void draw()
 	startX = endX;
 	startY = endY;
 	}
-
+noStroke();
+fill(51, 102, 0);
+ellipse(100,490,350,200);
+ellipse(350,490,400,300);
+textSize(32);
+textAlign(LEFT);
+fill(255);
+String s = "The sun is the enemy.";
+text(s, 10, 450);
 
 }
 void mousePressed()
 {
-	startX = (int)(Math.random()*500);
-	startY = 0;
+	startX = 250;
+	startY = 100;
 	endX = startX;
 	endY = 0;
 }
+
 
