@@ -28,10 +28,10 @@ noStroke();
 fill(51, 102, 0);
 ellipse(100,490,350,200);
 ellipse(350,490,400,300);
-textSize(32);
+textSize(28);
 textAlign(LEFT);
 fill(255);
-String s = "The sun is your enemy.";
+String s = "The sun is your enemy. Wear sunscreen everyday.";
 text(s, 10, 450);
 
 }
